@@ -54,8 +54,15 @@ problems due to perfect collinearity.</p>
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">foreccomb</span><span class="op">(</span><span class="va">observed_vector</span>, <span class="va">prediction_matrix</span>, newobs <span class="op">=</span> <span class="cn">NULL</span>,</span>
-<span>  newpreds <span class="op">=</span> <span class="cn">NULL</span>, byrow <span class="op">=</span> <span class="cn">FALSE</span>, na.impute <span class="op">=</span> <span class="cn">TRUE</span>, criterion <span class="op">=</span> <span class="st">"RMSE"</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">foreccomb</span><span class="op">(</span></span>
+<span>  <span class="va">observed_vector</span>,</span>
+<span>  <span class="va">prediction_matrix</span>,</span>
+<span>  newobs <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  newpreds <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  byrow <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  na.impute <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  criterion <span class="op">=</span> <span class="st">"RMSE"</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
@@ -114,10 +121,6 @@ rank. In the presence of perfect collinearity, the iterative algorithm identifie
 linear dependence and removes the one among them that has the lowest accuracy (according to a selected criterion, default is RMSE).
 This procedure is repeated until the revised prediction matrix is full rank.</p>
     </div>
-    <div id="author">
-    <h2>Author</h2>
-    <p>Christoph E. Weiss, Gernot R. Roetzer</p>
-    </div>
     <div id="references">
     <h2>References</h2>
     <p>Junger, W. L., Ponce de Leon, A., and Santos, N. (2003). Missing Data Imputation in Multivariate Time Series
@@ -129,6 +132,10 @@ via EM Algorithm. <em>Cadernos do IME</em>, <b>15</b>, 8--21.</p>
     <h2>See also</h2>
     <div class="dont-index"><p><code><a href="https://rdrr.io/pkg/mtsdi/man/mnimput.html" class="external-link">mnimput</a></code>,
 <code><a href="https://rdrr.io/pkg/Matrix/man/rankMatrix.html" class="external-link">rankMatrix</a></code></p></div>
+    </div>
+    <div id="author">
+    <h2>Author</h2>
+    <p>Christoph E. Weiss, Gernot R. Roetzer</p>
     </div>
 
     <div id="ref-examples">

@@ -115,10 +115,6 @@ such as Armstrong (2001), Stock and Watson (2004), and Jose and Winkler (2008).<
 <p>This method allows the user to select \(\lambda\) (by specifying <code>trim_factor</code>), or to leave the selection to
 an optimization algorithm -- in which case the optimization criterion has to be selected (one of "MAE", "MAPE", or "RMSE").</p>
     </div>
-    <div id="author">
-    <h2>Author</h2>
-    <p>Christoph E. Weiss and Gernot R. Roetzer</p>
-    </div>
     <div id="references">
     <h2>References</h2>
     <p>Armstrong, J. S. (2001). Combining Forecasts. In: <em>Armstrong, J. S. (Ed.), Principles of Forecasting. Springer, Boston, MA</em>, 417--439.</p>
@@ -134,6 +130,10 @@ an optimization algorithm -- in which case the optimization criterion has to be 
 <code><a href="comb_SA.html">comb_SA</a></code>,
 <code><a href="comb_MED.html">comb_MED</a></code>,
 <code><a href="https://generics.r-lib.org/reference/accuracy.html" class="external-link">accuracy</a></code></p></div>
+    </div>
+    <div id="author">
+    <h2>Author</h2>
+    <p>Christoph E. Weiss and Gernot R. Roetzer</p>
     </div>
 
     <div id="ref-examples">
@@ -423,7 +423,7 @@ an optimization algorithm -- in which case the optimization criterion has to be 
 <span class="r-out co"><span class="r-pr">#&gt;</span>     pred &lt;- apply(newpreds, 1, function(x) mean(x, trim = object$Trim_Factor))</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     return(pred)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> }</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;bytecode: 0x55aded5fa598&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;bytecode: 0x56049daaf248&gt;</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &lt;environment: namespace:ForecastComb&gt;</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $Weights</span>
@@ -724,7 +724,7 @@ an optimization algorithm -- in which case the optimization criterion has to be 
 <span class="r-out co"><span class="r-pr">#&gt;</span>     pred &lt;- apply(newpreds, 1, function(x) mean(x, trim = object$Trim_Factor))</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     return(pred)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> }</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;bytecode: 0x55aded5fa598&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;bytecode: 0x56049daaf248&gt;</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &lt;environment: namespace:ForecastComb&gt;</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $Weights</span>
